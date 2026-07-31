@@ -44,4 +44,18 @@ class CalendarMathTest {
         assertTrue(CalendarDate(2026, 7, 4) < date)
         assertTrue(CalendarDate(2026, 8, 1) > date)
     }
+
+    @Test
+    fun daysBetweenHandlesLeapYearBoundaries() {
+        assertEquals(1, CalendarMath.daysBetween(CalendarDate(2024, 2, 28), CalendarDate(2024, 2, 29)))
+        assertEquals(2, CalendarMath.daysBetween(CalendarDate(2024, 2, 28), CalendarDate(2024, 3, 1)))
+        assertEquals(365, CalendarMath.daysBetween(CalendarDate(2025, 1, 1), CalendarDate(2026, 1, 1)))
+    }
+
+    @Test
+    fun monthNavigationCrossesYearBoundariesAndKeepsChineseTitle() {
+        assertEquals(CalendarMonth(2025, 12), CalendarMonth(2026, 1).previous())
+        assertEquals(CalendarMonth(2027, 1), CalendarMonth(2026, 12).next())
+        assertEquals("2026年11月", CalendarMonth(2026, 11).title())
+    }
 }
