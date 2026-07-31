@@ -42,7 +42,7 @@ Calendar {
 | `minDate` / `maxDate` | `null` | 可选日期和可进入月份的边界 |
 | `disabledDates` | 空集合 | 明确禁用日期 |
 | `isDateSelectable` | `null` | 业务禁用谓词，适合节假日/库存判断 |
-| `markers` | 空 Map | 日期对应的最多三个颜色点 |
+| `markers` | 空 Map | 日期对应的单个提示点 |
 | `showAdjacentMonths` | `false` | 是否显示、可点击相邻月日期 |
 | `firstDayOfWeek` | `MONDAY` | 一周首日 |
 | `weekdayLabels` | 日～六 | 本地化星期标题 |
