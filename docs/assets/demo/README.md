@@ -2,8 +2,8 @@
 
 此目录预留给 Calendar 的演示视频、封面图与 GIF。
 
-- 演示视频：待上传（建议 `kuikly-calendar-demo.mp4`）
+- 演示视频：[kuikly-calendar-demo.mp4](kuikly-calendar-demo.mp4)
 - 封面图：待上传（建议 `cover.png`）
 - GIF 预览：待上传（建议 `preview.gif`）
 
-上传后请同步更新根目录 README 的“演示视频”链接。大文件建议使用 Release 附件、对象存储或 Git LFS，不直接提交普通 Git 历史。
+当前视频来自本地演示录屏，文件较小，可随文档保留。若后续演示视频变大，建议改用 Release 附件、对象存储或 Git LFS，并同步更新根目录 README 链接。
